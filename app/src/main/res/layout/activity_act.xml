@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Información basica"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorBlack"/>
+
+            <EditText
+                android:id="@+id/personText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:ems="10"
+                android:hint="@string/nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/phoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="Ingrese su numero de telefono"
+                android:layout_marginBottom="@dimen/margin_10" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecciona tu horario"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorBlack"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="left">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <CheckBox
+                            android:id="@+id/lunes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lunes" />
+
+                        <CheckBox
+                            android:id="@+id/martes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Martes" />
+
+                        <CheckBox
+                            android:id="@+id/miercoles"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Miercoles " />
+
+                        <CheckBox
+                            android:id="@+id/jueves"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jueves " />
+
+                        <CheckBox
+                            android:id="@+id/viernes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Viernes " />
+
+                        <CheckBox
+                            android:id="@+id/sabado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sabado " />
+
+                        <CheckBox
+                            android:id="@+id/domingo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dominigo " />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="right">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/horario_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="11:00 a 12:00 hrs" />
+
+                        <CheckBox
+                            android:id="@+id/horario_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="12:00 a 13:00 hrs " />
+
+                        <CheckBox
+                            android:id="@+id/horario_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="13:00 a 14:00 hrs " />
+                        <CheckBox
+                            android:id="@+id/horario_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="14:00 a 15:00 hrs " />
+
+                        <CheckBox
+                            android:id="@+id/horario_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15:00 a 16:00 hrs " />
+
+                        <CheckBox
+                            android:id="@+id/horario_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="16:00 a 17:00 hrs " />
+                        <CheckBox
+                            android:id="@+id/horario_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="17:00 a 18:00 hrs " />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/btnArrendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/add"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/edit" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/delete" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
